@@ -1,0 +1,18 @@
+---
+- hosts: nodes
+  vars: 
+    user1: chaitu3
+  tasks:
+   - name: create a user named {{ user1 }}
+     user:
+       name: "{{ user1 }}"
+       state: present
+   - name: install multiple packages
+     package:
+       name: "{{ item }}"
+       state: present
+     with_items:
+         - gcc
+         - nano
+         - ntp
+         - nginx
