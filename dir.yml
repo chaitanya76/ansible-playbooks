@@ -1,0 +1,10 @@
+---
+- hosts: nodes
+  tasks: 
+   - name: create a dir named playbooks
+     file:
+       name: playbooks
+       mode: 777
+       path: /home/ubuntu/
+       state: directory
+ 

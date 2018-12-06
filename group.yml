@@ -1,0 +1,8 @@
+---
+- hosts: nodes
+  tasks: 
+   - name: create a user named Capgemini
+     group: 
+       name: trainin-test
+       state: present
+ 

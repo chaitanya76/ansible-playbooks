@@ -1,0 +1,9 @@
+---
+- hosts: nodes
+  tasks: 
+   - name: create a  file named test1.txt
+     file:
+       name: test1.txt
+       mode: 777
+       state: touch
+ 

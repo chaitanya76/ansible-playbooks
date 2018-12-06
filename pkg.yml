@@ -1,0 +1,8 @@
+---
+- hosts: nodes
+  tasks: 
+   - name: create a dir named playbooks
+     package:
+       name: ntp
+       state: present
+ 
